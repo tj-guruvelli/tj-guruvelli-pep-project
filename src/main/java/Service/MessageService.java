@@ -25,7 +25,7 @@ public class MessageService {
         this.accountService = new AccountService();
     }
 
-    /**
+     /**
      * Creates a new message if the input is valid
      * @param message The message to create
      * @return The created message with message_id if successful, null otherwise
@@ -118,5 +118,6 @@ public class MessageService {
     public List<Message> getMessagesByAccount(int accountId) {
         return messageDAO.getMessagesByAccount(accountId);
     }
+  
     
 }
